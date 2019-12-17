@@ -13,7 +13,7 @@
     ]
   }],
   "permissions": [
-    "*://quintoandar.com.br/*",
-    "*://www.quintoandar.com.br/*"
+    "*://quintoandar.com.br/alugar/*",
+    "*://www.quintoandar.com.br/alugar/*"
   ]
 }

@@ -12,33 +12,43 @@ const toggle_loading = (add = true) => {
   }
 
   if (add) {
-    console.log("Lets add the loading");
     const loading = document.createElement('div');
     loading.innerHTML = 'Aguardando carregamento para remover imóveis "em breve"';
     loading.setAttribute('id', LOADING_ID);
+    
     document.querySelector("html").appendChild(loading);
     return;
   }
 
-  // Remove the loading div
   loadings.forEach(node => node.remove());
 };
 
 const mark_appartment = (node) => {
+  // Prevents the link from working
+  node.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  });
+
+  // Adds the styling and message
   node.classList.add(REMOVED_CLASS);
 
-  const flag = document.createElement('div');
-  flag.innerHTML = 'Não existe';
-  flag.classList.add(REMOVED_CLASS + '_flag');
+  const flag = document.createElement('span');
+  flag.innerHTML = 'Indisponível/Esquece/👎🏻/💣';
+  flag.classList.add(REMOVED_CLASS + '-flag');
 
   node.appendChild(flag);
+  
 }
 
 const mark_em_breve_appartments = () => {
+  // Queries for elements not parsed yet
   document.querySelectorAll('main a[href*="imovel/"]:not(.' + PARSED_CLASS + ')').forEach(node => {
+    // Adds the parsed class
     node.classList.add(PARSED_CLASS);
 
-    const matches = node.textContent.match('(em breve)|(indispon[ií]ve(l)|(is))/gi');
+    // Searches and removes unavailables
+    const matches = node.textContent.match('(em breve)|(indispon.ve(l)|(is))/gi');
     if (!matches) {
       return;
     }
