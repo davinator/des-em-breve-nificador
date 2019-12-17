@@ -10,3 +10,5 @@ Como esta extensão não está publicada, você só conseguirá instalá-la no m
 - No canto superior direito, ative o modo de desenvolvedor.
 - Clique em "Carregar sem compactação" na barra que apareceu após ativar o modo desenvolvedor.
 - Procure a pasta onde clonou o repositório ou baixou os arquivos e clique para abri-la ou em Selecionar.
+
+Pronto. Agora os imóveis marcados como "visitas em breve" ou coisas do tipo serão esmaecidos, marcados com uma tag bem visível e o clique neles não funcionará. (Você ainda pode clicar neles com o botão direito do mouse e abrir o link em uma nova aba, se realmente quiser).
