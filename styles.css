@@ -5,3 +5,12 @@ div#DesEmBreveNificador {
   width: 100px;
   z-index: 1000000;
 }
+a.qa-debn-parsed {
+  border:2px solid #f00;
+}
+.qa-debn-removed {
+  border:2px solid #f00;
+}
+.qa-debn-removed-flag {
+  border:2px solid #f00;
+}
