@@ -48,7 +48,8 @@ const mark_em_breve_appartments = () => {
     node.classList.add(PARSED_CLASS);
 
     // Searches and removes unavailables
-    const matches = node.textContent.match('(em breve)|(indispon.ve(l)|(is))/gi');
+    text = node.textContent + node.innerText;
+    const matches = text.match('(em breve)|(indispon.ve(l)|(is))/gi');
     if (!matches) {
       return;
     }
