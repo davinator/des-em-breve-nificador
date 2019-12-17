@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Des-Em breve-nificador para o Quinto Andar",
+  "version": "0.1",
+
+  "content_scripts": [{
+    "run_at": "document_start",
+    "css": ["styles.css"],
+    "js": ["des-em-breve-nificador.js"],
+    "matches": [
+      "*://www.quintoandar.com.br/*",
+      "*://quintoandar.com.br/*"
+    ]
+  }],
+  "permissions": [
+    "*://quintoandar.com.br/*",
+    "*://www.quintoandar.com.br/*"
+  ]
+}
