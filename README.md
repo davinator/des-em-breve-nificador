@@ -1,4 +1,8 @@
-Atualização: O QuintoAndar adicionou à sua busca a opção de exibir apenas imóveis disponíveis. Este plugin, portanto, tornou-se desnecessário.
+# Atualização: 
+
+**O QuintoAndar adicionou à sua busca a opção de exibir apenas imóveis disponíveis**. Este plugin, portanto, tornou-se desnecessário.
+
+---
 
 # des-em-breve-nificador
 Ta cansado dos imóveis marcados como "Em breve" no Quinto Andar? Suma com eles agora!
